@@ -1,0 +1,14 @@
+[project]
+name = "pybigint"
+version = "0.1"
+description = "A simple big integer library and example use cases."
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
